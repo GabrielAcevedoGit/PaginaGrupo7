@@ -257,3 +257,32 @@ h2{
   text-decoration: underline rgb(60, 46, 133);
   font-family:'Montserrat', sans-serif;
 }
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer:before {
+  content: "iPhone ";
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+footer:after {
+  content: "\00a9";
+  font-size: 20px;
+  margin-left: 5px;
+}
