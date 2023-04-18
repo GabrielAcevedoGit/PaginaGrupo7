@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iphone Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="./syles.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./country-select-js-master/build/css/countrySelect.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./images/Logo.png" height="60px" width="60px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#productos">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#organizacion">Organización</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre-nosotros">Sobre nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://tourmaline-brigadeiros-28c6c2.netlify.app/">Soporte</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <hr class="blanco" />
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="blanco" id="inicio">Iphone - Apple</h1>
+        <div class="position-relative">
+          <div class="position-absolute start-50 translate-middle arriba">
+            <h4 style="color: grey">Nuevo</h4>
+          </div>
+          <img src="./images/Fondo2.png" class="img-fluid" width="1000px" />
+          <div class="position-absolute start-50 translate-middle abajo">
+            <h2 class="blanco">Iphone 14 Pro Max</h2>
+            <h4 class="blanco">Se pasa de Pro.</h4>
+          </div>
+        </div>
+        <div class="container nuevo">
+          <img src="" id="img" />
+        </div>
+        <input type="range" class="range" value="3" min="0" max="6" id="range" />
+      </div>
+    </div>
+  </div>
+  <br ><br >
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="blanco" id="productos">Productos</h1>
+        <br >
+      </div>
+      <div class="row">
+        <div class="col text-start marco">
+          <h3 class="blanco i14">Iphone 14 Pro Max</h3>
+          <div class="contenedor">
+            <div class="imagen14">
+              <img id="img14" src="./images/iphone 14/14gold.png" />
+            </div>
+            <div class="caracteristicas blanco">
+              <h2>Características</h2>
+              <ul>
+                <li>Capacidad: 128GB, 256GB, 512GB o 1TB</li>
+                <li>Peso: 240gr</li>
+                <li>
+                  Pantalla Super Retina XDR.<br />
+                  Pantalla OLED de 6.7 pulgadas (diagonal) sin marco.<br />
+                  Resolución de 2796 x 1290 pixeles a 460 ppi.
+                </li>
+                <li>
+                  Sistema de cámaras Pro<br />
+                  Gran angular de 48 MP
+                </li>
+              </ul>
+            </div>
+          </div>
+          <br >
+          <div class="botones">
+            <button id="btn1" onclick="cambiarImagen14('./images/iphone 14/14gold.png')"></button>
+            <button id="btn2" onclick="cambiarImagen14('./images/iphone 14/14black.png')"></button>
+            <button id="btn3" onclick="cambiarImagen14('./images/iphone 14/14silver.png')"></button>
+          </div>
+          <div class="row">
+            <div class="col-6 text-end">
+              <a href="https://www.bit.ly/40lREVA" target="_blank" class="btn btn-primary btn-lg comprar">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br ><br >
+
+    <div class="row">
+      <div class="row">
+        <div class="col text-start marco">
+          <h3 class="blanco i13">Iphone 13</h3>
+          <div class="contenedor">
+            <div class="imagen13">
+              <img id="img13" src="./images/iphone 13/13pink.png" />
+            </div>
+            <div class="caracteristicas blanco">
+              <h2>Características</h2>
+              <ul>
+                <li>Capacidad: 128GB, 256GB o 512GB</li>
+                <li>Peso: 173gr</li>
+                <li>
+                  Pantalla Super Retina XDR<br />
+                  Pantalla OLED de 6.1 pulgadas (diagonal) sin marco<br />
+                  Resolución de 2532 x 1170 pixeles a 460 ppi
+                </li>
+                <li>
+                  Sistema de dos cámaras<br />
+                  cámaras de 12 MP: gran angular y ultra gran angular
+                </li>
+              </ul>
+            </div>
+          </div>
+          <br >
+          <div class="botones">
+            <button id="btn4" onclick="cambiarImagen13('./images/iphone 13/13pink.png')"></button>
+            <button id="btn5" onclick="cambiarImagen13('./images/iphone 13/13black.png')"></button>
+            <button id="btn6" onclick="cambiarImagen13('./images/iphone 13/13silver.png')"></button>
+          </div>
+          <div class="row">
+            <div class="col-6 text-end">
+              <a href="https://bit.ly/3omp5Ku" target="_blank" class="btn btn-primary btn-lg comprar">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br ><br >
+
+    <div class="row">
+      <div class="row">
+        <div class="col text-start marco">
+          <h3 class="blanco i12">Iphone 12</h3>
+          <div class="contenedor">
+            <div class="imagen12">
+              <img id="img12" src="./images/iphone 12/12gold.png" />
+            </div>
+            <div class="caracteristicas blanco">
+              <h2>Características</h2>
+              <ul>
+                <li>Capacidad: 64GB, 128GB o 256GB</li>
+                <li>Peso: 162gr</li>
+                <li>
+                  Pantalla Super Retina XDR<br />
+                  Pantalla OLED de 6.1 pulgadas (diagonal) sin marco<br />
+                  Resolución de 2532 x 1170 pixeles a 460 ppi
+                </li>
+                <li>
+                  Sistema de dos cámaras<br />
+                  cámaras de 12 MP: gran angular y ultra gran angular
+                </li>
+              </ul>
+            </div>
+          </div>
+          <br >
+          <div class="botones">
+            <button id="btn7" onclick="cambiarImagen12('./images/iphone 12/12gold.png')"></button>
+            <button id="btn8" onclick="cambiarImagen12('./images/iphone 12/12black.png')"></button>
+            <button id="btn9" onclick="cambiarImagen12('./images/iphone 12/12silver.png')"></button>
+          </div>
+          <div class="row">
+            <div class="col-6 text-end">
+              <a href="https://www.bit.ly/3A9ACiY" target="_blank" class="btn btn-primary btn-lg comprar">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br ><br >
+
+    <div class="row">
+      <div class="row">
+        <div class="col text-start marco">
+          <h3 class="blanco i12">Iphone 11</h3>
+          <div class="contenedor">
+            <div class="imagen11">
+              <img id="img11" src="./images/iphone 11/11gold.png" />
+            </div>
+            <div class="caracteristicas blanco">
+              <h2>Características</h2>
+              <ul>
+                <li>Capacidad: 64GB, 128GB o 256GB</li>
+                <li>Peso: 194gr</li>
+                <li>
+                  Pantalla LCD Liquid Retina HD<br />
+                  Pantalla LCD de 6.1 pulgadas<br />
+                  Resolución de 1792 x 828 pixeles a 326 ppi
+                </li>
+                <li>
+                  Sistema de dos cámaras<br />
+                  cámaras de 12 MP: gran angular y ultra gran angular
+                </li>
+              </ul>
+            </div>
+          </div>
+          <br >
+          <div class="botones">
+            <button id="btn10" onclick="cambiarImagen11('./images/iphone 11/11gold.png')"></button>
+            <button id="btn11" onclick="cambiarImagen11('./images/iphone 11/11black.png')"></button>
+            <button id="btn12" onclick="cambiarImagen11('./images/iphone 11/11silver.png')"></button>
+          </div>
+          <div class="row">
+            <div class="col-6 text-end">
+              <a href="https://www.bit.ly/3L93ttN" target="_blank" class="btn btn-primary btn-lg comprar">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br ><br >
+
+    <div class="row">
+      <div class="row">
+        <div class="col text-start marco">
+          <h3 class="blanco i8">Iphone 8</h3>
+          <div class="contenedor">
+            <div class="imagen8">
+              <img id="img8" src="./images/iphone 8/8gold.png" />
+            </div>
+            <div class="caracteristicas blanco">
+              <h2>Características</h2>
+              <ul>
+                <li>Capacidad: 64GB, 128GB o 256GB</li>
+                <li>Peso: 202gr</li>
+                <li>
+                  Pantalla Retina HD<br />
+                  Pantalla widescreen LCD Multi-Touch de 5.5 pulgadas
+                  (diagonal) con tecnología IPS<br />
+                  Resolución de 1920 x 1080 pixeles a 401 ppi
+                </li>
+                <li>
+                  Sistema de dos cámaras<br />
+                  cámaras de 12 MP: gran angular y teleobjetivo
+                </li>
+              </ul>
+            </div>
+          </div>
+          <br >
+          <div class="botones">
+            <button id="btn13" onclick="cambiarImagen8('./images/iphone 8/8gold.png')"></button>
+            <button id="btn14" onclick="cambiarImagen8('./images/iphone 8/8black.png')"></button>
+            <button id="btn15" onclick="cambiarImagen8('./images/iphone 8/8silver.png')"></button>
+          </div>
+          <div class="row">
+            <div class="col-6 text-end">
+              <a href="https://www.bit.ly/41gr41B" target="_blank" class="btn btn-primary btn-lg comprar">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br ><br >
+  </div>
+  <br >
+  <div class="container">
+    <div class="row">
+      <div class="col text-center blanco">
+        <h1 class="blanco" id="organizacion">Organización</h1>
+        <br><br>
+        <p>
+        La empresa detrás del iPhone es Apple Inc., una empresa de tecnología
+        con sede en Cupertino, California. El iPhone es uno de los productos
+        más populares y reconocidos de Apple, y fue lanzado por primera vez en
+        2007. Desde entonces, la empresa ha lanzado varios modelos del iPhone,
+        incluyendo versiones mejoradas y nuevas características como cámaras
+        avanzadas, pantallas más grandes y conectividad 5G. Apple es conocida
+        por su enfoque en el diseño y la experiencia del usuario, así como por
+        su sistema operativo iOS, que es exclusivo del iPhone y otros
+        dispositivos Apple. La empresa también ofrece una amplia gama de
+        servicios, como Apple Music, iCloud, Apple Pay y la App Store, que
+        proporcionan a los usuarios acceso a música, almacenamiento en la
+        nube, pagos móviles y aplicaciones. Apple es una de las empresas más
+        valiosas del mundo, y su éxito se debe en gran medida al iPhone y
+        otros productos populares como el iPad y la MacBook. La empresa ha
+        sido elogiada por su enfoque en la privacidad y la seguridad de los
+        datos de los usuarios, así como por su compromiso con la
+        sostenibilidad y la responsabilidad social corporativa.</p>
+        <br><br>
+
+      </div>
+      <br><br>
+    </div>
+    <br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h1 class="blanco" id="sobre-nosotros">Sobre Nosotros</h1>
+          <br />
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+              <img src="./images/gabi.jpeg" width="150px" height="150px" />
+            </div>
+            <div class="col-md-10 blanco">
+              <h2>Representante</h2>
+              <p>
+                Mi nombre es Gabriel Acevedo, tengo 21 años, soy de Lanus,
+                provincia de Buenos Aires, Argentina. Estudio Ingenieria en
+                Sistemas de informacion en la UTN. Y Desarrollo Web. Me gusta
+                programar, jugar con la compu y dar clases.
+              </p>
+            </div>
+
+            <div class="col-md-2">
+              <br />
+              <img src="./images/mau.jpg" width="150px" height="150px" />
+            </div>
+            <div class="col-md-10 blanco">
+              <br />
+              <h2>Especialista en Atención al Cliente</h2>
+              <p>
+                Hola, soy Mauro Montes, tengo 19 años y tengo experiencia en
+                atención al cliente y conocimientos en programación y recursos
+                humanos. Me uní al equipo de la tienda de Apple para brindar
+                el mejor servicio a nuestros clientes y contribuir al éxito de
+                la empresa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col text-center"><br><br>
+          <h1 class="blanco" id="contacto">Contacto</h1>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row blanco">
+        <div class="col-md-6 offset-md-3 mt-5">
+
+          <form action="#" method="post">
+            <div class="form-floating mb-3" style="text-align: center;">
+              <h5>Número de telefono de atencion al cliente:</h5>
+              <a href="tel:+15555555555" style="font-size: 20px;">+1 (555) 555-5555</a>
+            </div>
+
+            <div class="form-floating mb-3" style="text-align: center;">
+              <h5>Correo electrónico de soporte técnico:</h5>
+              <a href="mailto: support@appleexample.com" style="font-size: 20px;">support@appleexample.com</a>
+            </div>
+
+            <div class="form-floating mb-3" style="text-align: center;">
+              <h5>Ubicación de nuestra Central:</h5>
+              <p>123 Apple St, Cupertino, CA 95014, USA</p>
+
+            </div>
+
+            <div class="d-grid">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.4575275056227!2d-122.03276392367287!3d37.33167557210047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5b6c4951d0f%3A0xb651414deb31e9fb!2sApple%20Store!5e0!3m2!1ses!2sar!4v1681833015122!5m2!1ses!2sar"
+                width="600" height="450" style="border: 0; margin-bottom: 20px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="./country-select-js-master/build/js/countrySelect.min.js"></script>
+  <script>
+    $("#country").countrySelect();
+  </script>
+</body>
+
+</html>
