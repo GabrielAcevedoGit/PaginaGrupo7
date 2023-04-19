@@ -1,0 +1,124 @@
+body {
+    background-image: url(image.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+
+}
+
+#reclamo-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+.form-group {
+    font-weight: bold;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0062cc;
+}
+
+label {
+    font-family: 'Playfair Display', serif;
+    font-size: large;
+}
+
+h2 {
+    text-align: center;
+
+}
+
+input,
+textarea {
+    text-align: center;
+}
+
+input[type="text"]::placeholder {
+    color: black;
+    font-size: large;
+}
+
+input[type="email"]::placeholder {
+    color: black;
+    font-size: large;
+}
+
+textarea#problema::placeholder {
+    color: black;
+    font-size: large;
+}
+
+@media (min-width:768px) {
+    #logo {
+        max-width: 10%;
+        height: auto;
+        display: block;
+        float: left;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 5px;
+        margin-left: 50px;
+    }
+
+    label,
+    p {
+        font-size: x-large;
+    }
+
+    h2 {
+        font-size: 50px;
+        background-color: black;
+        color: white;
+    }
+
+
+}
+
+@media (max-width:767px) {
+    #logo {
+        max-width: 60%;
+        height: auto;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 5px;
+
+    }
+
+    #contenedor {
+        margin-bottom: 10px;
+    }
+
+
+
+}
+
+p {
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    font-family: 'Kanit', sans-serif;
+}

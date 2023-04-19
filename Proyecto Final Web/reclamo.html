@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="reclamo.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7976e3d46b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <title>Formulario de Reclamo</title>
+    <link rel="stylesheet" href="reclamo.css">
+</head>
+
+<body>
+    <section id="formulario-soporte">
+        <div>
+            <img id="logo" style="background-color: white;" src="Apple-Logo-PNG-Photos.png" alt=""
+                class="img-fluid"><br><br><br>
+            <h2>Formulario de Consulta o Reclam<i class="fa-brands fa-apple"></i></h2><br><br>
+            <p>Ponemos a su disposicion este documento, que debe rellenar si tiene algun incidente o consulta con
+                nuestros
+                equipos
+                o servicios. Gracias
+                de antemano por contribuir a la mejora de nuestra atencion!
+            </p>
+        </div>
+        <div id="contenedor" class="container mt-5">
+            <form id="reclamo-form">
+                <div class="form-group">
+                    <label for="nombre"></label>
+                    <input type="text" placeholder="Ingresa tu Nombre" class="form-control" id="nombre" name="nombre"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="apellido"></label>
+                    <input type="text" placeholder="Ingresa tu Apellido" class="form-control" id="apellido"
+                        name="apellido" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="numero"></label>
+                    <input type="text" placeholder="Ingresa tu Número de Celular" class="form-control" id="numero"
+                        name="numero" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input type="email" placeholder="Ingresa tu Email" class="form-control" id="email" name="email"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="problema"></label>
+                    <textarea placeholder="Ingresa tu Consulta o Inconveniente" class="form-control" id="problema"
+                        name="problema" required></textarea>
+                </div><br>
+
+                <button id="boton-enviar" type="submit" class="btn btn-primary">Enviar</button>
+                <script>
+                    document.querySelector('#boton-enviar').addEventListener('click', function () {
+                        // Obtener los valores de los campos del formulario
+                        const nombre = document.querySelector('#nombre').value;
+                        const apellido = document.querySelector('#apellido').value;
+                        const numero = document.querySelector('#numero').value;
+                        const email = document.querySelector('#email').value;
+                        const problema = document.querySelector('#problema').value;
+
+                        // Crear el objeto jsPDF y agregar el contenido
+                        const doc = new jsPDF();
+                        doc.text(`Nombre: ${nombre}`, 10, 10);
+                        doc.text(`Apellido: ${apellido}`, 10, 20);
+                        doc.text(`Numero: ${numero}`, 10, 30);
+                        doc.text(`Email: ${email}`, 10, 40);
+                        doc.text(`Problema: ${problema}`, 10, 50);
+
+                        // Descargar el archivo PDF
+                        doc.save('formulario.pdf');
+                    });
+
+
+                </script>
+
+
+
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
